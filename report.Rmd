@@ -1,0 +1,132 @@
+---
+#header-includes:
+#  - documentclass\{beamer\}
+output:
+  beamer_presentation:
+    keep_tex: true
+    includes:
+      in_header: functions.tex
+  #pdf_document:
+    #
+    #keep_tex: true
+
+params:
+  email: "--"
+  person: "--"
+  action: "--"
+  insight: "--"
+  user: "--"
+  activities: "--"
+  manager: "--"
+  champion: "--"
+  partners: "--"
+  analyst: "--"
+  data: "--"
+  time: "--"
+  money: "--"
+  deliverable: "--"
+  consumed: "--"
+  impact: "--"
+  spillover: "--"
+---
+
+```{r, echo=FALSE}
+tiny = character(25)
+small = character(50)
+large = character(200)
+```
+```{r, include=FALSE}
+options(tinytex.verbose = TRUE)
+```
+
+# {.noframenumbering .t}
+
+\setbeamercolor{block title}{bg=Users, fg=white}
+\beginbl{User Focus}
+    \fontsize{12}{6}\selectfont
+    `r params$person` will do `r params$action` differently because of `r params$insight` insight. \newline\newline
+    \fontsize{12}{6}\selectfont
+    Who is your user? \newline\newline\newline
+    \fontsize{8}{6}\selectfont
+    `r params$user` \newline\newline\newline
+    \fontsize{12}{6}\selectfont
+    What user activities will change? How?\newline\newline\newline
+		\fontsize{8}{6}\selectfont
+    `r params$activities`
+\endbl
+
+---
+
+# {.noframenumbering .t}
+
+\setbeamercolor{block title}{bg=Stakeholders, fg=white}
+\beginbl{Stakeholders}
+    \fontsize{12}{6}\selectfont
+		Project Manager?\newline\newline\newline
+		  \fontsize{8}{6}\selectfont
+		  `r params$manager`\newline\newline\newline
+    \fontsize{12}{6}\selectfont
+		Client Champion?\newline\newline\newline
+		  \fontsize{8}{6}\selectfont
+	  	`r params$champion`\newline\newline\newline
+		\fontsize{12}{6}\selectfont
+		Partners?\newline\newline\newline
+		  \fontsize{8}{6}\selectfont
+		  `r params$partners`\newline\newline\newline
+    \fontsize{12}{6}\selectfont
+		Analyst?\newline\newline\newline
+		  \fontsize{8}{6}\selectfont
+	  	`r params$analyst`\newline
+\endbl
+
+---
+
+# {.noframenumbering .t}
+\setbeamercolor{block title}{bg=Resources, fg=white}
+\beginbl{Resources}
+  \fontsize{12}{6}\selectfont
+	Needed Data?\newline\newline\newline
+  		\fontsize{8}{6}\selectfont
+		  `r params$data`\newline\newline\newline
+    \fontsize{12}{6}\selectfont
+		Time?\newline\newline\newline
+	    \fontsize{8}{6}\selectfont
+		  `r params$time`\newline\newline\newline
+    \fontsize{12}{6}\selectfont
+		Money?\newline\newline\newline
+  		\fontsize{8}{6}\selectfont
+		  `r params$money`
+\endbl
+
+---
+
+# {.noframenumbering .t}
+\setbeamercolor{block title}{bg=Deliverables, fg=white}
+\beginbl{Deliverables}
+  \begincols[T, onlytextwidth]
+    \begincol{0.23\linewidth}
+      \fontsize{12}{6}\selectfont
+			 What insight is being delivered?\newline\newline\newline
+  		 \fontsize{8}{6}\selectfont
+			`r params$deliverable`\newline
+		\endcol
+	  \begincol{0.23\linewidth}
+      \fontsize{12}{6}\selectfont
+			How will this insight be consumed?\newline\newline\newline
+  		\fontsize{8}{6}\selectfont
+			`r params$consumed`\newline
+		\endcol
+	  \begincol{0.23\linewidth}
+      \fontsize{12}{6}\selectfont
+			Measure of Impact?\newline\newline\newline\newline\newline
+  		\fontsize{8}{6}\selectfont
+			`r params$impact`\newline
+		\endcol
+		\begincol{0.23\linewidth}
+      \fontsize{12}{6}\selectfont
+			Spillover effect?\newline\newline\newline\newline\newline
+        		\fontsize{8}{6}\selectfont
+      			`r params$spillover`
+		\endcol
+	\endcols
+\endbl

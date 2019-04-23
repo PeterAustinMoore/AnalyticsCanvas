@@ -1,0 +1,184 @@
+html, body {
+  height:2800px;
+  width:100%;
+}
+body {
+  padding-top:85px;
+}
+h2 {
+  font-size: 50px;
+  font-family: Roboto;
+  font-weight: 300;
+  font-style: normal;
+}
+#helptext {
+  font-size: 16px;
+  font-family: Roboto;
+  font-weight: 300;
+  font-style: normal;
+}
+#section-row {
+  text-align:center;
+}
+@media all and (min-width: 800px) {
+  #centered {
+    width:100%;
+    display: inline-block;
+    text-align:center;
+  }
+  #centered > div {
+    margin: 0 auto;
+    vertical-align:text-bottom;
+    display:inline-block;
+  }
+}
+
+center {
+  width:100%;
+}
+
+.navbar {
+  background-color: #42a5f5;
+}
+.navbar-logo {
+  margin-top:5px;
+}
+.navbar-brand {
+  display:none;
+}
+.navbar-logo > img {
+  height:25px;
+  margin-left:10px;
+}
+.dbutton {
+   font-weight: 600!important;
+   text-transform: uppercase!important;
+   text-align:center;
+   display:inline-block;
+   padding: 10px 20px!important;
+   color: #fff!important;
+   border: none!important;
+   background-image: none!important;
+   background-color: #29b6f6!important;
+   font-size: 14px!important;
+   border-radius: 0!important;
+   box-shadow: none!important;
+   border-radius: 2rem!important
+}
+#bookmark {    
+   font-weight: 600!important;
+   text-transform: uppercase!important;
+   text-align:center;
+   vertical-align:middle;
+   padding: 10px 20px!important;
+   color: #29b6f6!important;
+   border: none!important;
+   background-image: none!important;
+   border: 2px solid #29b6f6!important;
+   background-color:white;
+   font-size: 14px!important;
+   border-radius: 0!important;
+   box-shadow: none!important;
+   border-radius: 2rem!important
+}
+.visible {
+  display: none;
+}
+.shiny-text-output {
+  margin:10px;
+  vertical-align: text-bottom;
+}
+
+#person {
+  border: 0;
+  background:transparent;
+  background-color:transparent;
+  outline:0;
+  border-bottom: 1px solid black;
+  -web-kit-box-shadow:none;
+  box-shadow:none;
+}
+#action {
+  border: 0;
+  background:transparent;
+  background-color:transparent;
+  outline:0;
+  border-bottom: 1px solid black;
+  -web-kit-box-shadow:none;
+  box-shadow:none;
+}
+#insight {
+  border: 0;
+  background:transparent;
+  background-color:transparent;
+  outline:0;
+  border-bottom: 1px solid black;
+  -web-kit-box-shadow:none;
+  box-shadow:none;
+}
+
+#user, #activities {
+  width:100%;
+  height:200px;
+}
+#data {
+  height:150px;
+}
+#deliverable, #consumed, #impact, #spillover {
+  height:75px;
+}
+
+#section-user-focus .chart-title {
+  height:45px;
+  font-weight: bold;
+  background:#568B3E;
+  color:white;
+  font-size: 25px;
+}
+#section-stakeholders .chart-title {
+    font-weight: bold;
+  background:#E55325;
+  color:white;
+  height:45px;
+  font-size: 25px;
+}
+#section-resources .chart-title {
+    font-weight: bold;
+  background:#007A6C;
+  color:white;
+  height:45px;
+  font-size: 25px;
+}
+#section-deliverables .chart-title {
+    font-weight: bold;
+  background:#207BA5;
+  color:white;
+  height:45px;
+  font-size: 25px;
+}
+
+#section-email-required .chart-title {
+  font-weight: bold;
+  background:#673AB7;
+  color:white;
+  height:45px;
+  font-size: 25px;
+}
+#modal {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 10%; /* Full width (cover the whole page) */
+  height: 30px; /* Full height (cover the whole page) */
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.2); /* Black background with opacity */
+  z-index: 2000; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+  text-align:center;
+  vertical-align:bottom;
+  border-radius: 2rem!important
+}
+
+.shiny-input-container:not(.shiny-input-container-inline) {
+  width: 100%;
+}
